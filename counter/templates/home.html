@@ -16,6 +16,7 @@
   </head>
 
   <body>
+    <!-- "{{api}}" -->
       <div class="container">
           <div class="row justify-content-center">
               <div class="col-md-8 text-center">
@@ -62,8 +63,8 @@
                               <li>Carbohydrates: <span class="float-end">{{api.0.carbohydrates_total_g}}</span></li>
                               <li>Cholesterol: <span class="float-end">{{api.0.cholesterol_mg}}</span></li>
                               <li>Saturated fat: <span class="float-end">{{api.0.fat_saturated_g}}</span></li>
-                              <li>Total Fat: <span class="float-end">{{api.0.fat_saturated_g}}</span></li>
-                              <li>Fiber Content: <span class="float-end">{{api.0.fat_total_g}}</span></li>
+                              <li>Total Fat: <span class="float-end">{{api.0.fat_total_g}}</span></li>
+                              <li>Fiber Content: <span class="float-end">{{api.0.fiber_g}}</span></li>
                               <li>Potassium <span class="float-end">{{api.0.potassium_mg}}</span></li>
                               <li>Protein: <span class="float-end">{{api.0.protein_g}}</span></li>
                               <li>Sodium:<span class="float-end">{{api.0.sodium_mg}}</span></li>
@@ -127,15 +128,15 @@
                     datasets: [{
                         label: 'Nutritional values of {{api.0.name | capfirst}}',
                         data: [
-                              {{api.0.carbohydrates_total_g}},
-                              {{api.0.cholesterol_mg}},
-                              {{api.0.fat_saturated_g}},
-                              {{api.0.fat_saturated_g}},
-                              {{api.0.fat_total_g}},
-                              {{api.0.potassium_mg}},
-                              {{api.0.protein_g}},
-                              {{api.0.sodium_mg}},
-                              {{api.0.sugar_g}},
+                              "{{api.0.carbohydrates_total_g}}",
+                              "{{api.0.cholesterol_mg}}",
+                              "{{api.0.fat_saturated_g}}",
+                              "{{api.0.fat_saturated_g}}",
+                              "{{api.0.fat_total_g}}",
+                              "{{api.0.potassium_mg}}",
+                              "{{api.0.protein_g}}",
+                              "{{api.0.sodium_mg}}",
+                              "{{api.0.sugar_g}}",
                         ],
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.2)',
